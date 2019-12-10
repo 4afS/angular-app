@@ -1,5 +1,4 @@
 #body {
-  margin-top:75px;
 }
 
 h1 {
@@ -9,6 +8,11 @@ h1 {
   position:absolute;
   top:-70px;
   right:0px;
+}
+
+.message {
+  font-size:18pt;
+  padding-top:50px;
 }
 
 p {

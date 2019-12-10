@@ -1,13 +1,32 @@
 <div id="body">
   <h1>{{title}}</h1>
-  <p [ngStyle]="nowStyle">ngStyle</p>
-  <input type="text" #in1
-         (change)=
-           "check(in1.value, in2.value, in3.value);"><br>
-  <input type="text" #in2
-         (change)=
-           "check(in1.value, in2.value, in3.value);"><br>
-  <input type="text" #in3
-         (change)=
-           "check(in1.value, in2.value, in3.value);"><br>
+  <p class="message">{{message}}</p>
+  <form [(formGroup)]="myControl"
+     (ngSubmit)="onSubmit()">
+    <table>
+      <tr><th>Name</th><td>
+        <div *ngIf="name.invalid">Name is required</div>
+        <div><input type="text" formControlName="name"></div>
+      </td></tr>
+      <tr><th>Mail</th><td>
+        <div *ngIf="mail.invalid">Invalid Mail</div>
+        <div><input type="text" formControlName="mail"></div>
+      </td></tr>
+      <tr><th>Age</th><td>
+        <div 
+          *ngIf="age.errors != null && 
+            (age.errors.min != null) ||
+            (age.errors.max != null)">
+          Invalid range of age</div>
+        <div 
+          *ngIf="age.errors != null && age.errors.even != null">
+          Only even</div>
+        <div><input type="number" formControlName="age"></div>
+      </td></tr>
+      <tr><th></th><td>
+          <input [disabled]="myControl.invalid"
+            type="submit" value="click">
+      </td></tr>
+    </table>
+  </form>
 </div>
