@@ -14,7 +14,7 @@ export class HelloComponent implements OnInit {
   lastColor: string;
   input1: string;
 
-  @ViewChild(MessageComponent, {static:false})
+  @ViewChild(MessageComponent)
   private msgComponent: MessageComponent;
 
   constructor() {
