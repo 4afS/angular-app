@@ -1,21 +1,17 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div class="containter">
   <div>
-    <form [formGroup]="myControl">
-      <div>
-        <mat-checkbox formControlName="check">
-          Checkbox
-        </mat-checkbox>
-      </div>
-      <br>
-      <div>
-        <mat-radio-group formControlName="radio">
-          <mat-radio-button value="male">male</mat-radio-button>
-          <mat-radio-button value="female">female</mat-radio-button>
-        </mat-radio-group>
-      </div>
-      <button mat-raised-button (click)="click()">click</button>
-    </form>
-    <p class="message">{{message}}</p>
+    <mat-card>
+      <mat-card-title>Card Layout</mat-card-title>
+      <mat-card-subtitle>this is sub title text</mat-card-subtitle>
+
+      <mat-card-content>
+        this is card layout contents
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-flat-button color="primary">OK</button>
+        <button mat-flat-button color="accent">Continue</button>
+        <button mat-flat-button color="warn">Cancel</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>
