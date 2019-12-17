@@ -1,0 +1,22 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+  color: white;
+  margin: 0px;
+  padding: 5px 10px;
+  font-size: 12pt;
+  font-weight: bold;
+  background-color: #29B6F6;
+}
+
+nav a { text-decoration: none; }
+nav a:link { color: white; }
+nav a:visited { color: white; }
+nav a:hover { text-decoration: underline; }
+nav a:active { text-decoration: underline; }
+
+div.content {
+  margin: 10px;
+}

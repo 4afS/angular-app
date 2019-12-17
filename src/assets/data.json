@@ -1,0 +1,7 @@
+{
+  "data": "this is sample data.",
+  "list": [
+    { "name": "Taro", "mail": "taro@example.com", "tel": "090-1111-2222" },
+    { "name": "hanako", "mail": "hanako@example.com", "tel": "090-2222-3333" }
+  ]
+}
