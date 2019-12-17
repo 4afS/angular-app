@@ -10,7 +10,7 @@ import {IncrementalSearchComponent} from './incremental-search/incremental-searc
 import {MessageComponent} from './message/message.component';
 import {MystyleDirective} from './mystyle.directive';
 import {MaterialComponent} from './material/material.component';
-import {MatButtonModule} from '@angular/material';
+import {MatButtonModule, MatExpansionModule} from '@angular/material';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatInputModule} from '@angular/material/input';
@@ -54,7 +54,8 @@ const routes: Routes = [
     MatRadioModule,
     MatToolbarModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
+    MatExpansionModule
   ],
   bootstrap: [AppComponent]
 })

@@ -1,17 +1,32 @@
 <div class="containter">
   <div>
-    <mat-card>
-      <mat-card-title>Card Layout</mat-card-title>
-      <mat-card-subtitle>this is sub title text</mat-card-subtitle>
-
-      <mat-card-content>
-        this is card layout contents
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-flat-button color="primary">OK</button>
-        <button mat-flat-button color="accent">Continue</button>
-        <button mat-flat-button color="warn">Cancel</button>
-      </mat-card-actions>
-    </mat-card>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>First Panel</mat-panel-title>
+          <mat-panel-description>this is first panel</mat-panel-description>
+        </mat-expansion-panel-header>
+          <div>
+            <h2>First Panel</h2>
+            <p>first panel</p>
+          </div>
+          <mat-action-row>
+            <button mat-button>click</button>
+          </mat-action-row>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Secont Panel</mat-panel-title>
+          <mat-panel-description>this is secont panel</mat-panel-description>
+        </mat-expansion-panel-header>
+          <div>
+            <h2>Second Panel</h2>
+            <p>second panel</p>
+          </div>
+          <mat-action-row>
+            <button mat-button>click</button>
+          </mat-action-row>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
 </div>
