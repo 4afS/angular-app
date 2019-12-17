@@ -22,6 +22,10 @@ export class MessageComponent implements OnInit {
     return this.service.weights;
   }
 
+  getNumberOfVisitors() {
+    return this.service.number_of_visitors;
+  }
+
   getWaight() {
     return this.service.weight;
   }

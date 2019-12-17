@@ -21,7 +21,7 @@ import {MatRadioModule} from '@angular/material/radio';
 const routes: Routes = [
   {path: 'material', component: MaterialComponent},
   {path: 'hello', component: HelloComponent},
-  // {path: 'msg', component: MessageComponent},
+  {path: 'msg', component: MessageComponent},
 ];
 
 @NgModule({
@@ -29,7 +29,7 @@ const routes: Routes = [
     AppComponent,
     HelloComponent,
     IncrementalSearchComponent,
-    // MessageComponent,
+    MessageComponent,
     MystyleDirective,
     MaterialComponent,
   ],

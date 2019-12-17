@@ -2,10 +2,8 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
 class Weights {
+  number_of_visitors: number;
   body_weight: BodyInfo[] = [];
-  constructor(weights: BodyInfo[]) {
-    this.body_weight = weights;
-  }
 }
 
 class BodyInfo {
@@ -19,7 +17,7 @@ class BodyInfo {
 
 export class MycheckService {
   private _weights: Weights;
-  url: string = 'http://localhost:3000/db';
+  url: string = 'http://localhost:3000/data';
   // url: string = 'https://osakainstituteof.tech/show/';
 
 
@@ -32,6 +30,10 @@ export class MycheckService {
 
   get weights() {
     return this._weights.body_weight;
+  }
+  
+  get number_of_visitors() {
+    return this._weights.number_of_visitors;
   }
 
   get weight() {
