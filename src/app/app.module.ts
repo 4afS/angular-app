@@ -9,16 +9,19 @@ import {HelloComponent} from './hello/hello.component';
 import {IncrementalSearchComponent} from './incremental-search/incremental-search.component';
 import {MessageComponent} from './message/message.component';
 import {MystyleDirective} from './mystyle.directive';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialComponent} from './material/material.component';
 import {MatButtonModule} from '@angular/material';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatInputModule} from '@angular/material/input';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
 
 const routes: Routes = [
   {path: 'material', component: MaterialComponent},
   {path: 'hello', component: HelloComponent},
-  {path: 'msg', component: MessageComponent},
+  // {path: 'msg', component: MessageComponent},
 ];
 
 @NgModule({
@@ -26,9 +29,9 @@ const routes: Routes = [
     AppComponent,
     HelloComponent,
     IncrementalSearchComponent,
-    MessageComponent,
+    // MessageComponent,
     MystyleDirective,
-    MaterialComponent
+    MaterialComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,10 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatInputModule,
+    MatCheckboxModule,
+    MatRadioModule,
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {FormGroup, FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-material',
@@ -7,15 +8,19 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MaterialComponent implements OnInit {
   message: string;
+  myControl: FormGroup;
 
   constructor() {}
 
   ngOnInit() {
     this.message = "Plz select button.";
+    this.myControl = new FormGroup({
+      check: new FormControl(false),
+      radio: new FormControl('male'),
+    });
   }
 
-  change(v: string) {
-    this.message = 'select: "' + v + '".';
+  click() {
+    this.message = JSON.stringify(this.myControl.value);
   }
-
 }

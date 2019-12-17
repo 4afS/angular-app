@@ -1,13 +1,20 @@
 <div class="containter">
   <div>
-    <h2>material-button.</h2>
-    <mat-button-toggle-group #tgl="matButtonToggleGroup" (change)="change(tgl.value)">
-      <mat-button-toggle value="one">One</mat-button-toggle>
-      <mat-button-toggle value="two">Two</mat-button-toggle>
-      <mat-button-toggle value="three">Three</mat-button-toggle>
-      <mat-button-toggle value="four">Four</mat-button-toggle>
-      <mat-button-toggle value="five">Five</mat-button-toggle>
-    </mat-button-toggle-group>
+    <form [formGroup]="myControl">
+      <div>
+        <mat-checkbox formControlName="check">
+          Checkbox
+        </mat-checkbox>
+      </div>
+      <br>
+      <div>
+        <mat-radio-group formControlName="radio">
+          <mat-radio-button value="male">male</mat-radio-button>
+          <mat-radio-button value="female">female</mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <button mat-raised-button (click)="click()">click</button>
+    </form>
     <p class="message">{{message}}</p>
   </div>
 </div>
