@@ -17,6 +17,9 @@ import {MatInputModule} from '@angular/material/input';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
 
 const routes: Routes = [
   {path: 'material', component: MaterialComponent},
@@ -49,6 +52,9 @@ const routes: Routes = [
     MatInputModule,
     MatCheckboxModule,
     MatRadioModule,
+    MatToolbarModule,
+    MatDividerModule,
+    MatCardModule
   ],
   bootstrap: [AppComponent]
 })
